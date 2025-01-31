@@ -5,14 +5,14 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
-  title: 'Se não mudar, mamou',
+  title: 'Redes de computadores',
   favicon: 'img/firelink.png',
 
   url: 'https://firelink-library.github.io',
-  baseUrl: '/docusaurus-template',
+  baseUrl: '/network',
 
   organizationName: 'Firelink Library',
-  projectName: 'docusaurus-template',
+  projectName: 'network',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -29,7 +29,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/firelink-library/docusaurus-template/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/firelink-library/network/tree/main/packages/create-docusaurus/templates/shared/',
           routeBasePath: '/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex]
@@ -40,7 +40,7 @@ const config: Config = {
             xslt: true,
           },
           editUrl:
-            'https://github.com/firelink-library/docusaurus-template/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/firelink-library/network/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -70,7 +70,7 @@ const config: Config = {
           label: 'Tutorial',
         },
         {
-          href: 'https://github.com/firelink-library/docusaurus-template',
+          href: 'https://github.com/firelink-library/network',
           label: 'GitHub',
           position: 'right',
         },
