@@ -6,9 +6,63 @@ slug: /intro
 
 # As redes de computadores
 
-A origem da fala - de neanderthal a homo sappiens. Motivo da atribuição aos
-neanderthais: complexidade das ferramentas utilizadas. Precisavam ensinar uns
-aos outros.
+No que consiste a comunicação? Há aqui três acepções possíveis. A primeira
+define comunicação como a continuidade entre uma coisa e outra. Quando há, por
+exemplo, um caminho que ligue a cozinha de uma casa ao seu quintal, diz-se que
+há comunicação entre os dois ambientes. Uma segunda acepção possível é a de
+notificar alguém acerca de um evento ou acontecimento. Quando um casal envia
+convites ao seu casamento, efetivamente comunica aos convidados que estes são
+bem vindos à cerimônia. A terceira e - para nós - mais importante acepção é a
+de transmitir informações através de um meio.
+
+Utilizando a terceira acepção, é possível definir os pré requisitos para que a
+comunicação ocorra. A saber:
+
+* Deve-se haver um *meio*. Tal qual o mar oferece morada para as correntes e
+  estas, por sua vez, enfurecem o ar para a criação de ventos, também esse
+  próprio ar oferece morada para as palavras humanas.
+* Tais palavras seriam apenas perdidas ao vento sem a existência de um
+  *destinatário*. Sem um destino, as palavras do homem tem tanta gravidade
+  quanto o silêncio do espaço. Sem ter quem o ouça, vive o *remetente* em
+  condições similares a um astronauta submetido ao vácuo do espaço.
+* Precisa-se, portanto, que exista esse *remetente* para proferir suas
+  palavras.
+* Por fim, tais palavras são fruto de uma *mensagem* que teve sua origem e
+  forma original na consciência do *remetente* e, havendo também um
+  *destinatário* e um *meio* que una a consciência do segundo ao primeiro,
+  passa a existir também a interpretação da mensagem - a manifestação dessa
+  união.
+
+## 1. A história da comunicação humana
+
+A tarefa de retraçar, através das evidências fossilizadas, a linha evolutiva
+humana até o momento em que - pela primeira vez - sons foram embutidos com
+significado é quase como tatear no escuro em busca de uma agulha em mar de
+palha. Há, no entanto, razões para imaginar que esse momento já havia
+acontecido tão cedo quanto da existência dos Neanderthais. Essas razões são
+resumidas em duas asserções:
+
+1. A análise da composição ossea dos Neanderthais indica que nele já havia todo
+   o aparato necessário para produzir e modular sons, assim como faz hoje o
+   homem.
+2. Há evidências de que nossos antepassados já utilizavam ferramentas
+   suficientemente complexas de modo que é razoável assumir que seu manejo
+   precisaria ser ensinado.
+
+Escondida nessa segunda asserção fica o motivo pelo qual navegamos em águas tão
+antigas: desde que se tem informações para avaliar, é clara a conclusão de que
+a comunicação é como a chama Prometeica; capaz de iluminar novas eras na
+existência humana.
+
+Qualquer professor ou aluno de história é capaz de repetir que a existência
+humana pode ser dividida entre um período ao qual chamamos de pré-história -
+que expande-se no decorrer de dezenas de milhares de anos -, e o período,
+comparativamente muito menor, a partir do qual é possível obter informações o
+suficiente para que este se subdivida. Não há dúvida quanto ao evento que
+separa exatamente estes dois períodos: a escrita.
+
+Novamente
+
 
 Era paleolítica - primeiras pinturas em cavernas; petróglifos. Calendário
 lunar. Idéias foram ficando mais complexas e surge o conceito de aprendizado
