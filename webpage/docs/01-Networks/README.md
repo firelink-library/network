@@ -1,5 +1,5 @@
 ---
 title: Redes de computadores
-sidebar-position: 1
+sidebar-position: 2
 slug: /netintro
 ---
