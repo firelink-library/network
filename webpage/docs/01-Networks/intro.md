@@ -61,83 +61,201 @@ comparativamente muito menor, a partir do qual é possível obter informações 
 suficiente para que este se subdivida. Não há dúvida quanto ao evento que
 separa exatamente estes dois períodos: a escrita.
 
-Novamente
+Desde as primeiras manifestações pictográficas nas paredes das cavernas, como
+os petróglifos, até o desenvolvimento de sistemas ideográficos, a escrita
+permitiu a preservação e a transmissão de conhecimento através das gerações. Se
+antes as lições eram aprendidas unicamente pela oralidade, com o advento da
+escrita surgiram registros que possibilitaram a sistematização do saber humano.
 
+A invenção da imprensa no século XV por Gutenberg intensificou esse fenômeno. A
+informação, antes restrita às elites letradas e aos mosteiros, começou a
+circular com maior amplitude, permitindo a disseminação de ideias e o avanço
+das ciências. A revolução da informação promovida pelos livros e periódicos foi
+o prelúdio da revolução das telecomunicações, onde a comunicação humana
+transcendeu os limites da escrita física e se expandiu pelo ar, pelo fio e,
+mais tarde, pelo sinal digital.
 
-Era paleolítica - primeiras pinturas em cavernas; petróglifos. Calendário
-lunar. Idéias foram ficando mais complexas e surge o conceito de aprendizado
-geracional.
+## 2. O princípio das telecomunicações
 
-Origem dos sistemas de escrita - ideogramas. Mais tarde, sistemas de escrita
-permitem a invenção dos livros. Coincide com o começo da história registrada,
-fim da pré história. Um divisor de águas na existência humana.
+A comunicação sempre foi uma necessidade humana, e com o avanço das sociedades
+surgiram diferentes formas de transmitir informações a distância. A palavra
+"telecomunicação" vem do grego "tele", que significa "distância", e
+"communicare", que significa "tornar comum". Trata-se, portanto, da transmissão
+de mensagens a longas distâncias, um conceito que começou a se concretizar
+desde os primórdios da civilização.
 
-A impresa e o encurtamento de distâncias. Revolução da informação através dos
-periódicos. Prelúdio da revolução da telecomunicação.
+As primeiras formas de telecomunicação foram rudimentares, mas eficazes dentro
+do contexto de suas épocas. O uso de sinais de fumaça, tambores e bandeiras
+sinalizadoras são exemplos de métodos primitivos, baseados na transmissão
+visual ou sonora de mensagens. Civilizações antigas, como os chineses e
+romanos, utilizaram sistemas organizados de mensageiros para garantir que
+informações críticas chegassem a seus destinos com maior rapidez e
+confiabilidade. Esses sistemas de comunicação primitivos permitiam a
+coordenação de tropas, a transmissão de ordens políticas e até o alerta sobre
+invasões iminentes.
 
-## 1. O princípio das telecomunicações
+Com o advento do telégrafo no século XIX, os sinais elétricos começaram a ser
+utilizados para transmitir mensagens codificadas a grandes distâncias. O Código
+Morse, desenvolvido por Samuel Morse e Alfred Vail, tornou-se o padrão para
+comunicações telegráficas, possibilitando a transmissão eficiente de
+informações através de fios. Esse avanço representou um marco significativo,
+pois permitiu uma comunicação quase instantânea, superando as limitações de
+tempo e distância dos sistemas anteriores. Pouco tempo depois, a invenção do
+telefone por Alexander Graham Bell revolucionou ainda mais a comunicação,
+permitindo a transmissão direta da voz humana e transformando radicalmente a
+forma como as pessoas interagiam à distância.
 
-O que é a comunicação? Quais são os requisitos e componentes para que a
-comunicação seja possível?
+O rádio, que surgiu no final do século XIX e se popularizou no início do século
+XX, ampliou ainda mais o alcance da comunicação ao permitir transmissões sem
+fio para grandes audiências. Com ele, surgiram as primeiras transmissões
+jornalísticas ao vivo, programas de entretenimento e a comunicação militar em
+tempo real, tornando-se um meio fundamental na organização social e na difusão
+cultural. Isso pavimentou o caminho para o desenvolvimento da televisão, que
+trouxe o elemento visual para a comunicação de massa, e, posteriormente, das
+telecomunicações digitais, que permitiram o armazenamento e a transmissão de
+dados em tempo real por meio de redes de computadores e da internet.
 
-Origem do termo telecomunicação. Comparação com os componentes estabelecidos
-como os mínimos para que haja a comunicação "tradicional".
+A necessidade de comunicação entre máquinas surge naturalmente à medida que a
+computação evolui. Inicialmente, os computadores eram sistemas isolados,
+operando em um único ambiente, mas a ideia de compartilhamento de recursos
+levou ao desenvolvimento das primeiras redes de computadores.
 
-O princípio da telecomunicaçãõ: Sinais sonoros, de fumaça, bandeiras, etc.
-Gerar a ideia de que comunicação transmitida pelo ar é mais simples do que pode
-parecer.
+No início, a comunicação entre dispositivos se dava por meio de terminais
+conectados a mainframes, utilizando interfaces padronizadas para troca de
+informações. Com o tempo, a descentralização dos sistemas levou ao surgimento
+de redes locais (LANs), permitindo que múltiplos computadores compartilhassem
+dados e dispositivos periféricos. A partir daí, a interconexão dessas redes
+resultou na criação da internet, um dos marcos mais significativos da história
+da comunicação humana.
 
-O telégrafo e o telefone - aparecem os sinais elétricos e eletronicamente
-amplificados. Importância para as telecomunicações. Surge o rádio, a partir do
-qual muitos dos conceitos utilizados nas redes de computadores se apoiam.
+O crescimento exponencial da internet trouxe desafios técnicos, levando ao
+desenvolvimento de protocolos de comunicação que garantissem a
+interoperabilidade entre sistemas distintos. O conceito de camadas de rede foi
+introduzido para organizar a complexidade da comunicação digital, permitindo
+que diferentes tecnologias coexistissem e evoluíssem sem comprometer a
+integridade da rede global.
 
-As redes de computadores - como e por quê dois computadores precisariam se
-comunicar? Vincular com o princípio da computação em si, a transição da era dos
-mainframes single thread para os teleterminais. A vantagem de se ter
-dispositivos periféricos que precisam apenas implementar uma interface em comum
-e, por fim, a internet em si, que revolucionou novamente a comunicação humana.
+## 3. Níveis de Redes
 
-## 2. Níveis de redes
+As redes de computadores podem ser classificadas em diferentes níveis, de
+acordo com seu alcance e complexidade. Esses níveis vão desde a comunicação
+entre dispositivos pessoais até a interconexão global. Cada nível apresenta
+desafios e soluções específicas para garantir o funcionamento eficiente da
+comunicação digital.
 
-Personal Area Network - comunicação a nível de dispositivo. Geralmente de um
-dispositivo principal com seus periféricos. Aqui entra VGA, RS232, USB,
-Bluetooth. Fundamental para a multifuncionalidade dos computadores. Explicar em
-um pouco mais de detalhes ao menos um dos protocolos expostos acima.
+### 3.1. Personal Area Network (PAN)
 
-Local Area Network - Surgem as figuras dos switches e access points, conectando
-um computador ao outro. Aqui, torna-se importante o endereçamento de
-dispositivos utilizando protocolos como MAC Address e IP. Também faz sentido
-mencionar o conceito de VLANs para seccionar redes locais.
+As Personal Area Networks (PANs) operam no nível mais básico de comunicação,
+interligando dispositivos próximos a um único usuário. Elas possibilitam a
+conexão entre dispositivos principais e seus periféricos, garantindo a
+multifuncionalidade dos computadores e demais equipamentos eletrônicos.
 
-Metropolitan Area Network - atuação já a nível de cidades. Interconecta redes
-locais utilizando meios mais resistentes a interferência e com maior largura de
-banda. Já exige a atuação de orgãos governamentais para concessão de direitos
-de distribuição e sistemas como 5g, TV a cabo e até mesmo provedores de
-internet.
+Alguns exemplos de tecnologias utilizadas nesse nível incluem:
+- **VGA (Video Graphics Array)** – padrão de conexão para transmissão de vídeo
+  entre dispositivos.
+- **RS232** – protocolo de comunicação serial usado em equipamentos industriais
+  e antigos computadores.
+- **USB (Universal Serial Bus)** – tecnologia amplamente utilizada para
+  transferência de dados e energia entre dispositivos.
+- **Bluetooth** – protocolo sem fio que permite a comunicação entre
+  dispositivos em curtas distâncias.
 
-Wide Area Network - nível global/continental. Cada aumento de nível aumenta o
-grau de dificuldade e diminui a eficiência da comunicação. Torna-se mais caro.
-Aqui atuam os serviços de provedores de internet e de infraestrutura das redes
-que interconectam o globo. Torna-se mais importante o uso de bons algoritmos de
-transmissão e roteamento.
+Dentre essas tecnologias, o **Bluetooth** se destaca como um exemplo
+interessante de estudo, pois utiliza padrões de comunicação sem fio de baixo
+consumo energético para conectar dispositivos como fones de ouvido, teclados,
+mouses e até mesmo sistemas embarcados em automóveis.
 
-Internet - definição de internet como aglutinação de redes com protocolos ou
-arquiteturas heterogêneas. Surgem os gateways.
+### 3.2. Local Area Network (LAN)
 
-## 3. Hierarquia de pacotes
+As redes locais (LANs) interconectam computadores dentro de um ambiente
+restrito, como escritórios, residências e campus universitários. Esse tipo de
+rede permite a comunicação eficiente entre dispositivos próximos, garantindo
+acesso compartilhado a recursos como impressoras e servidores.
 
-Necessidade de padronização para expansão dos dispositivos capazes de se
-intercomunicar. Aqui traçamos um paralelo com as abstrações e padronizações de
-um sistema operacional. Surgem as camadas de rede (ainda não vamos falar de OSI
-ou TCP/IP)
+A LAN é composta por dispositivos de interconexão como **switches** e **access
+points**, responsáveis por distribuir os dados de forma organizada. Para o
+funcionamento adequado, a identificação dos dispositivos ocorre por meio de
+**endereçamento MAC** (Media Access Control) e **endereçamento IP**.
 
-Definição dos termos para essa abstração - camadas, protocolos, interfaces e
-pacotes.
+Outro conceito importante nas LANs é o uso de **VLANs (Virtual Local Area
+Networks)**, que permitem segmentar redes locais, aumentando a segurança e o
+controle do tráfego de dados.
 
-Exemplo do livro do tanembaum de um tradutor para um filósofo.
+### 3.3. Metropolitan Area Network (MAN)
 
-Conclusão sobre camadas - a camada inferior não sabe da existência da superior,
-que vai carregar a sua mensagem e os seus metadados na forma de um cabeçalho
-e/ou um terminador. O remetente empilha cabeçalhos e possivelmente divide a
-mensagem em múltiplas partes, para que o destinatário faça o caminho oposto até
-ter a mensagem em sua camada de "aplicação"
+As redes metropolitanas (MANs) operam em um nível mais amplo, interligando
+redes locais em áreas urbanas. Essas redes utilizam meios de transmissão de
+alta capacidade e resistência a interferências para garantir a comunicação
+eficiente entre diferentes pontos de uma cidade.
+
+Esse tipo de rede exige regulamentação governamental para concessão de direitos
+de operação, sendo comum o uso de tecnologias como:
+- **5G** – rede móvel de alta velocidade e baixa latência, permitindo conexões
+  rápidas e confiáveis.
+- **TV a cabo** – infraestrutura já existente que pode ser adaptada para
+  fornecer internet.
+- **Provedores de internet** – empresas responsáveis por distribuir a conexão
+  entre redes locais e redes de maior alcance.
+
+### 3.4. Wide Area Network (WAN)
+
+As redes de longa distância (WANs) operam em escalas nacionais, continentais ou
+globais. Esse nível de rede apresenta desafios como maior custo de operação e
+menor eficiência em comparação com redes locais ou metropolitanas.
+
+A infraestrutura das WANs depende de grandes provedores de internet e de
+tecnologias avançadas de transmissão de dados, como cabos submarinos, satélites
+e redes de fibra óptica. Para garantir a comunicação eficiente, algoritmos
+avançados de roteamento e transmissão de dados são empregados.
+
+### 3.5. Internet
+
+A internet representa a interconexão de redes heterogêneas, permitindo a
+comunicação entre dispositivos de diferentes arquiteturas e protocolos. Essa
+estrutura global é possível graças à atuação de **gateways**, dispositivos que
+traduzem protocolos distintos para garantir a comunicação entre redes de
+diferentes naturezas.
+
+A internet revolucionou a maneira como a informação é distribuída e consumida,
+permitindo o acesso a serviços essenciais, redes sociais e plataformas de
+comunicação instantânea.
+
+## 4. Hierarquia de rede
+
+A expansão dos dispositivos capazes de se comunicar exige uma padronização
+eficiente para garantir a interoperabilidade. Esse princípio de padronização
+pode ser comparado às abstrações e padronizações adotadas em sistemas
+operacionais, onde diferentes camadas trabalham juntas para fornecer
+funcionalidade sem que cada uma precise conhecer os detalhes da outra.
+
+### 4.1. Estrutura das Camadas de Rede
+
+Para organizar essa comunicação, surgem as **camadas de rede**, que dividem a
+complexidade da transmissão de dados em níveis hierárquicos. Essas camadas
+utilizam conceitos fundamentais, como:
+- **Camadas**: Divisões funcionais da comunicação de dados.
+- **Protocolos**: Conjuntos de regras que definem como as camadas devem
+  interagir.
+- **Interfaces**: Pontos de conexão entre camadas adjacentes, permitindo a
+  troca de dados.
+- **Pacotes**: Blocos de dados encapsulados com informações necessárias para a
+  transmissão e recepção.
+
+### 4.2. Funcionamento do Encapsulamento de Dados
+
+O principal conceito por trás das camadas é que uma camada inferior **não sabe
+da existência da superior**. Cada camada adiciona informações no formato de
+**cabeçalhos** e, em alguns casos, **terminadores**, que estruturam os pacotes
+de forma a serem compreendidos pela próxima camada.
+
+O processo de comunicação ocorre da seguinte forma:
+1. O remetente empilha cabeçalhos à medida que a mensagem passa por camadas
+   inferiores.
+2. A mensagem pode ser dividida em múltiplas partes para facilitar o
+   transporte.
+3. O destinatário executa o processo inverso, removendo os cabeçalhos e
+   reconstituindo a mensagem original.
+
+Esse modelo garante um fluxo organizado e modular, permitindo a expansão e a
+manutenção eficiente das redes sem comprometer a compatibilidade entre sistemas
+diferentes.
