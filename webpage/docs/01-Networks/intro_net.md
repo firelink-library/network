@@ -54,12 +54,12 @@ antigas: desde que se tem informações para avaliar, é clara a conclusão de q
 a comunicação é como a chama Prometeica; capaz de iluminar novas eras na
 existência humana.
 
-Qualquer professor ou aluno de história é capaz de repetir que a existência
-humana pode ser dividida entre um período ao qual chamamos de pré-história -
-que expande-se no decorrer de dezenas de milhares de anos -, e o período,
-comparativamente muito menor, a partir do qual é possível obter informações o
-suficiente para que este se subdivida. Não há dúvida quanto ao evento que
-separa exatamente estes dois períodos: a escrita.
+Qualquer historiador ou mesmo esudante de história é capaz de repetir que a
+existência humana pode ser dividida entre um período ao qual chamamos de
+pré-história - que expande-se no decorrer de dezenas de milhares de anos -, e o
+período, comparativamente muito menor, a partir do qual é possível obter
+informações o suficiente para que este se subdivida. Não há dúvida quanto ao
+evento que separa exatamente estes dois períodos: a escrita.
 
 Desde as primeiras manifestações pictográficas nas paredes das cavernas, como
 os petróglifos, até o desenvolvimento de sistemas ideográficos, a escrita
