@@ -1,5 +1,5 @@
 ---
 title: Modulação e multiplexação
-sidebar-position: 3
+sidebar_position: 3
 slug: /modulation
 ---
