@@ -5,6 +5,7 @@ slug: /modulation
 ---
 
 import SyncProblem from '@site/static/img/sync_problem.png';
+import NRZMultilevel from '@site/static/img/nrz_multilevel.png';
 
 # Conceitos de modulação e multiplexação
 
@@ -92,45 +93,89 @@ transmissão necessária para enviar um sinal com codificação manchester
 **dobra**. Mesmo com essa clara limitação, a solução por codificação manchester
 era utilizada nas primeiras versões do protocolo Ethernet.
 
-### Non-return-to-zero inverted (NRZ-I)
-
 Outra solução é o NRZ-I (Non-Return-to-Zero Inverted), onde a transição de
 nível de tensão ocorre apenas quando um bit '1' é transmitido. Isso resolve o
 problema para sequências de uns, pois mantém uma alternância mínima no sinal.
 No entanto, ainda apresenta dificuldades para longas sequências de zeros, onde
 não há mudanças de estado, tornando a sincronização desafiadora.
 
+<img 
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5fbY_h_VqTQiEWEVou7jWopxgNjHMZJpAWw&s"
+  alt="NRZI"
+  style={{ 
+    display: 'block',
+    marginLeft: 'auto',
+    maxHeight: '40vh',
+    marginRight: 'auto'
+  }} 
+/>
+<p><center>Fig. - O sinal NRZ-I é uma codificação conceitualmente similar à
+Manchester, mas sem a limitação de dobrar a taxa de transmissão.</center></p>
+
 Para mitigar os problemas do NRZ-I, surgiram técnicas de codificação como o
 4B/5B e o 8B/10B. No esquema 4B/5B, cada grupo de 4 bits é convertido em um
 código de 5 bits, garantindo que haja transições suficientes para
-sincronização. Já no 8B/10B, utilizado em redes de alta velocidade como o
+sincronização. A ideia é justamente utilizar mais bits do que o necessário para
+poder evitar os casos em que hajam muitos zeros em sequência.
+
+<img 
+  src="https://media.cheggcdn.com/media/e5e/e5e1ff90-97f8-417d-8d2e-36eccb6707d4/phpVI4V6p"
+  alt="4B/5B"
+  style={{ 
+    display: 'block',
+    marginLeft: 'auto',
+    maxHeight: '40vh',
+    marginRight: 'auto'
+  }} 
+/>
+<p><center>Fig. - A codificação 4B/5B mapeia 4 bits de dados para um
+**codeword** de 5 bits.</center></p>
+
+O overhead do uso do NRZ-I em conjunto com codificação 4B/5B é de 25%, um claro
+ganho com relação aos 100% presentes quando se utiliza a codificação
+Manchester.
+
+Já no 8B/10B, utilizado em redes de alta velocidade como o
 Gigabit Ethernet e Fibre Channel, 8 bits são mapeados para 10 bits, assegurando
 um balanceamento de carga DC e a presença de transições regulares no sinal.
-Essas técnicas evitam longas sequências de zeros com um overhead menor do que o
-código Manchester, sendo amplamente utilizadas em redes modernas de alta
-velocidade. No esquema 4B/5B, cada grupo de 4 bits é convertido em um código de
-5 bits, garantindo que haja transições suficientes para sincronização. Já no
-8B/10B, utilizado em redes de alta velocidade como o Gigabit Ethernet e Fibre
-Channel, 8 bits são mapeados para 10 bits, assegurando um balanceamento de
-carga DC e a presença de transições regulares no sinal. Essas técnicas evitam
-longas sequências de zeros com um overhead menor do que o código Manchester,
-sendo amplamente utilizadas em redes modernas de alta velocidade.
 
 ## 3. Modulação
 
-A modulação é a técnica utilizada para transmitir sinais digitais em meios
-analógicos, transformando bits em símbolos. Essa conversão é necessária porque
-muitos meios de transmissão, como ondas de rádio e fibra óptica, operam melhor
-com sinais contínuos ao invés de pulsos discretos. Além disso, a modulação
-permite que diferentes sinais compartilhem o mesmo meio sem interferência
-significativa, aumentando a eficiência da transmissão e permitindo comunicações
-de longa distância com menor perda de qualidade. Esse processo é fundamental
-para permitir a transmissão eficiente de informações em diferentes meios
-físicos, como cabos coaxiais, fibra óptica e ondas de rádio. Cada símbolo pode
-representar múltiplos bits, influenciando diretamente a taxa de transmissão
-(baud rate) e a eficiência espectral do sistema.
+Considere a seguinte aplicação de um sinal **NRZ**:
+
+<img 
+  src={NRZMultilevel}
+  alt="NRZ" 
+  style={{ 
+    display: 'block',
+    marginLeft: 'auto',
+    maxHeight: '40vh',
+    marginRight: 'auto'
+  }} 
+/>
+<p><center>Fig. - Um sinal NRZ com múltiplos níveis.</center></p>
+
+Percebe-se que há 4 níveis em vez de 2. Isso permite a codificação de 2 bits
+por mensagem enviada. Quando isso ocorre, dizemos que o **símbolo** sendo
+enviado corresponde a 2 bits. A taxa de transmissão de símbolos por segundo é
+chamada de **Baud rate**.
 
 ### Tipos de modulação
+
+<div style={{ textAlign: 'center' }}>
+    <iframe 
+        style={{
+            display: 'block',
+            margin: 'auto',
+            width: '100%',
+            height: '50vh',
+        }}
+        src="https://www.youtube.com/embed/qGwUOvErR8Q" 
+        frameborder="0" 
+        allowFullScreen>
+    </iframe>
+</div>
+<br/>
 
 - **Modulação por amplitude (ASK - Amplitude Shift Keying)**: A informação é
   transmitida variando a amplitude da onda portadora. No caso binário, a
