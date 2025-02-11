@@ -30,7 +30,7 @@ re-sincronize seu clock de amostragem, resultando em erros de interpretação do
 dados transmitidos. Para mitigar esse problema, técnicas como a codificação de
 linha, incluindo o uso do código Manchester e esquemas como 4B/5B e 8B/10B, são
 aplicadas para garantir que transições periódicas aconteçam, facilitando a
-recuperação do sinal e reduzindo a taxa de erro na transmissão. resultando em
+recuperação do sinal e reduzindo a taxa de erro na transmissão, resultando em
 erros de interpretação e exigindo técnicas auxiliares para garantir a
 sincronização adequada.
 
