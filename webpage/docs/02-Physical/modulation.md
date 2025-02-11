@@ -4,70 +4,93 @@ sidebar_position: 3
 slug: /modulation
 ---
 
+import SyncProblem from '@site/static/img/sync_problem.png';
+
 # Conceitos de modulação e multiplexação
 
 ## 1. Non-return-to-zero
 
-Os sinais digitais podem ser representados por ondas quadradas, onde cada nível
-de tensão corresponde a um valor binário (0 ou 1). Esse tipo de representação é
-intuitivo e simples de implementar, mas apresenta alguns desafios importantes.
-Um dos principais problemas é o consumo de potência, já que mudanças bruscas de
-nível de tensão aumentam a dissipação de energia no meio de transmissão e nos
-circuitos eletrônicos envolvidos.
+Quando vemos uma onda quadrada, geralmente assumimos que o sinal começa em 0,
+mas nem sempre isso é o que acontece de fato. Considerando que alguns dos meios
+de comunicação tem atenuação de componentes de baixa frequência, isso significa
+filtrar qualquer variação causada na média de potência do sinal. A implicação
+disso é que um sinal desequilibrado pode acabar se degradando. A solução?
+Modificar os níveis lógicos de modo que o valor lógico baixo seja um nível de
+tensão negativa. Surge então o sinal **Non-return-to-zero**.
 
-Além disso, a transmissão contínua de um mesmo nível de tensão pode dificultar
-a sincronização entre transmissor e receptor, o que leva à necessidade de
-técnicas para evitar a perda de alinhamento temporal dos bits.
-
-O esquema Non-Return-to-Zero (NRZ) é uma técnica básica de codificação onde o
-sinal mantém o mesmo nível de tensão para representar um bit durante todo o
-período de símbolo. Isso simplifica a geração do sinal e reduz a largura de
-banda necessária para a transmissão. No entanto, quando há longas sequências de
-zeros ou uns, a falta de transições no sinal pode causar dificuldades para o
-receptor identificar corretamente os limites dos bits. Isso ocorre porque a
-ausência de variação no nível de tensão pode impedir que o receptor
-re-sincronize seu clock de amostragem, resultando em erros de interpretação dos
-dados transmitidos. Para mitigar esse problema, técnicas como a codificação de
-linha, incluindo o uso do código Manchester e esquemas como 4B/5B e 8B/10B, são
-aplicadas para garantir que transições periódicas aconteçam, facilitando a
-recuperação do sinal e reduzindo a taxa de erro na transmissão. resultando em
-erros de interpretação e exigindo técnicas auxiliares para garantir a
-sincronização adequada.
+<img 
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqaqJfnTJ-Q2DtgxQvm3z3WzfB6OWrPft5AQ&s"
+  alt="NRZ" 
+  style={{ 
+    display: 'block',
+    marginLeft: 'auto',
+    maxHeight: '40vh',
+    marginRight: 'auto'
+  }} 
+/>
+<p><center>Fig. - O sinal do tipo Non-Return-to-Zero, como o nome implica, não
+retorna a zero. Isso ajuda a manter o sinal balanceado.</center></p>
 
 ## 2. O problema da sincronização
 
-A sincronização é essencial para garantir que o receptor interprete
-corretamente os dados transmitidos. O clock do sistema define a taxa na qual os
-bits são transmitidos, mas quando o receptor não consegue sincronizar-se com o
-transmissor, ocorrem erros de interpretação, resultando em perda de pacotes e
-degradação do sinal.
+Considere o seguinte: foi enviado, através de um fio condutor, o sinal abaixo.
 
-Uma solução simples seria enviar um sinal de clock junto com os dados,
-permitindo que o receptor acompanhe a temporização correta. No entanto, isso
-aumentaria a quantidade de condutores necessários, elevando os custos e a
-complexidade da transmissão. Além disso, em meios de comunicação sem fio ou de
-alta velocidade, essa abordagem pode ser impraticável devido à atenuação e
-interferências externas.
+<img 
+  src={SyncProblem}
+  alt="Sync Problem"
+  style={{ 
+    display: 'block',
+    marginLeft: 'auto',
+    maxHeight: '40vh',
+    marginRight: 'auto'
+  }} 
+/>
+<p><center>Fig. - Sinal digital enviado e o seu clock gerador.</center></p>
 
-### Código Manchester
+Do que precisamos para interpretar o sinal eletronicamente? De nada mais do que
+um sistema capaz de ler os níveis lógicos do sinal com velocidade o suficiente
+de modo que satisfaça o período natural de sua oscilação. Em outras palavras,
+precisamos de um leitor que seja ao menos capaz de realizar a leitura na
+frequência do sinal de *clock*.
 
-Uma alternativa eficiente é o código Manchester, uma técnica de codificação
-onde cada bit é representado por uma transição de nível dentro do período do
-símbolo. No caso do Manchester diferencial, a transição ocorre
-independentemente do nível anterior, reduzindo a possibilidade de erros de
-interpretação causados por inversões de fase.
+Os mais atentos já devem ter identificado o problema. Afinal, não é comum que
+se envie junto aos dados também o sinal de *clock*; isso imputa ao destinatário
+a missão de decodificar, também, o período de comunicação do sinal obtido. Essa
+missão não é particularmente problemática quando consideramos os períodos em
+que há variação de sinal - quando o pulso de 1 ou 0 dura exatamente um ciclo -;
+no entanto, há ocasiões em que o sinal passa alguns ciclos em 1 ou em 0. Quando
+isso ocorre, não há nenhuma maneira de encontrar o período do sinal. Em outras
+palavras, não há como **sincronizar o clock**.
 
-Esse método garante que haja sempre uma mudança de nível, permitindo que o
-receptor sincronize-se automaticamente ao identificar transições no sinal. No
-entanto, essa técnica tem como desvantagem o fato de dobrar a frequência de
-transmissão, exigindo uma largura de banda maior. Por exemplo, ao comparar o
-código Manchester com a codificação 4B/5B, percebe-se que o primeiro requer o
-dobro da largura de banda do sinal original, enquanto o segundo adiciona apenas
-25% de overhead. Essa diferença torna o código Manchester menos eficiente em
-cenários onde a largura de banda é um recurso crítico, como em enlaces de longa
-distância ou redes de alta velocidade. Por esse motivo, é mais comum em redes
-locais de curta distância, como a Ethernet clássica, onde a qualidade do sinal
-pode ser melhor controlada.
+Uma solução ingênua é passar a enviar o sinal de clock junto do sinal de dados.
+O problema dessa abordagem é um tanto óbvio: custo. Não é economicamente viável
+- em especial quando há significativa distância entre o remetente e o
+destinatário - utilizar um segundo condutor para outro sinal apenas para
+sincronização de clock.
+
+A segunda pior solução possível, mas que ainda resolve de forma definitiva o
+problema, é utilizar a **codificação manchester**.
+
+<div style={{ textAlign: 'center' }}>
+    <iframe 
+        style={{
+            display: 'block',
+            margin: 'auto',
+            width: '100%',
+            height: '50vh',
+        }}
+        src="https://www.youtube.com/embed/XKtxxZ327UM" 
+        frameborder="0" 
+        allowFullScreen>
+    </iframe>
+</div>
+<br/>
+
+Com essa codificação, é possível enviar o sinal de clock junto com os dados em
+um único condutor. Melhor, mas tem um outro problema claro: a taxa de
+transmissão necessária para enviar um sinal com codificação manchester
+**dobra**. Mesmo com essa clara limitação, a solução por codificação manchester
+era utilizada nas primeiras versões do protocolo Ethernet.
 
 ### Non-return-to-zero inverted (NRZ-I)
 
