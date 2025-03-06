@@ -57,7 +57,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Template docusaurus',
+      title: 'Redes de Computadores',
       logo: {
         alt: 'Logo Firelink Lib.',
         src: 'img/firelink.png',
