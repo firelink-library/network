@@ -44,7 +44,7 @@ slug: /ip
             width: '100%',
             height: '50vh',
         }}
-        src="https://www.youtube.com/embed/HIPVDxTrHqI" 
+        src="https://www.youtube.com/embed/Aeb80Q_mJp4" 
         frameborder="0" 
         allowFullScreen>
     </iframe>
@@ -59,7 +59,67 @@ slug: /ip
             width: '100%',
             height: '50vh',
         }}
-        src="https://www.youtube.com/embed/kKZlPeyef0k" 
+        src="https://www.youtube.com/embed/bdh2kfgxVuw" 
+        frameborder="0" 
+        allowFullScreen>
+    </iframe>
+</div>
+<br/>
+
+<div style={{ textAlign: 'center' }}>
+    <iframe 
+        style={{
+            display: 'block',
+            margin: 'auto',
+            width: '100%',
+            height: '50vh',
+        }}
+        src="https://www.youtube.com/embed/jJU2AVX6gpU" 
+        frameborder="0" 
+        allowFullScreen>
+    </iframe>
+</div>
+<br/>
+
+<div style={{ textAlign: 'center' }}>
+    <iframe 
+        style={{
+            display: 'block',
+            margin: 'auto',
+            width: '100%',
+            height: '50vh',
+        }}
+        src="https://www.youtube.com/embed/iUQmn3nNjaI" 
+        frameborder="0" 
+        allowFullScreen>
+    </iframe>
+</div>
+<br/>
+
+<div style={{ textAlign: 'center' }}>
+    <iframe 
+        style={{
+            display: 'block',
+            margin: 'auto',
+            width: '100%',
+            height: '50vh',
+        }}
+        src="https://www.youtube.com/embed/2rV4tJkP-CQ" 
+        frameborder="0" 
+        allowFullScreen>
+    </iframe>
+</div>
+<br/>
+
+<div style={{ textAlign: 'center' }}>
+    <iframe 
+        style={{
+            display: 'block',
+            margin: 'auto',
+            width: '100%',
+            height: '50vh',
+        }}
+        src="https://www.youtube.com/embed/EHV0Q0R--Ns" 
         frameborder="0" 
         allowFullScreen>
     </iframe>
