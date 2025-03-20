@@ -6,24 +6,31 @@ slug: /transport
 
 # Introdução à camada de transporte
 
-Camada física - se preocupa com o transporte de informação. A unidade de medida
-é em bits. Lida com interferência e sincronização de clock.
+Antes de entrarmos efetivamente no assunto da camada de transporte, cabe uma
+breve revisão de cada uma das camadas:
 
-Camada de enlace - se preocupa com controle de fluxo, endereçamento local,
-detecção e correção de erros. Unidade de medida é em frames - sincronização
-usando cabeçalho e terminadores.
+* Começamos pela camada física, cuja principal preocupação é na existência de
+  uma via física para o transporte dos sinais. Isso inclui avaliar o limite de
+  banda dessa conexão e como protegê-la de interferência. A camada física lida
+  com sequências de bits.
+* A seguir, vimos a camada de enlace, que introduz o **switch**. Aqui já surge
+  o conceito de um *frame*. Surge também a preocupação de detectar e
+  possivelmente corrigir erros, limite de fluxo para que um dispositivo não
+  sobrecarregue o outro e endereçamento de mensagens.
+* A camada de rede foi a última camada que estudamos e ela é a espinha dorsal
+  da internet. O problema mais complexo com o qual ela lida é o roteamento de
+  mensagens através de redes heterogêneas. Aqui surge também a preocupação de
+  lidar com congestões.
 
-Camada de rede - se preocupa com roteamento, controle de congestão e tradução
-de protocolos. Lida com pacotes (datagramas).
+Se você está prestando atenção, percebeu que já temos nesse momento todos os
+elementos mínimos para garantir que uma mensagem possa sair de um computador em
+Nova Iorque e chegar em Tóquio. Sendo assim, por que vamos continuar com as
+abstrações? O que faz a camada de transporte se tudo o que precisávamos
+resolver, já foi resolvido?
 
-O que sobrou para a camada de transporte? Já não temos a garantia de que a
-mensagem sai de A até B sem interferência, com controle de erros, controle de
-fluxo, controle de congestão, tradução entre protocolos e encaminhamento
-otimizado? O que falta é controle do usuário.
-
-A camada de transporte entrega, pela primeira vez, todas essas preocupações
-para o hardware do usuário. Sendo assim, pode-se argumentar que é a camada mais
-importante que temos.
+A resposta é: a camada de transporte entrega, pela primeira vez, todas essas
+preocupações para o hardware do usuário. Aqui, temos finalmente uma abstração
+que pode lidar com a comunicação ponta a ponta. 
 
 ## 1. Os serviços da camada de transporte
 
